@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hybrid PLC</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            poppins: ['Poppins', 'sans-serif'],
+          },
+          colors: {
+            darkgold: '#b88a4b',
+            dark: '#010e13',
+          }
+        }
+      }
+    }
+  </script>
+  <!-- Font Awesome (updated and working) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W8ZfGZFeT+SwrTT4M+bSrfkzOjw8ZjglJgf4s9Zp6yJ8MGqhwF2YllL9l4jfS4gQ3EvA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="font-poppins text-gray-800 bg-white">
+
+  <!-- Header -->
+  <header class="flex justify-between items-center p-4 border-b border-gray-300">
+    <h1 class="text-2xl font-bold text-darkgold">HYBRID PLC</h1>
+    <button class="md:hidden text-2xl" onclick="document.getElementById('nav').classList.toggle('hidden')">
+      &#9776;
+    </button>
+    <nav id="nav" class="hidden md:flex space-x-6 text-sm font-semibold uppercase">
+      <a href="#about" class="hover:text-darkgold">About</a>
+      <a href="#services" class="hover:text-darkgold">Services</a>
+      <a href="#mission" class="hover:text-darkgold">Mission</a>
+      <a href="#contact" class="hover:text-darkgold">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <div class="relative w-full h-96">
+    <img
+      src="https://images.pexels.com/photos/13801831/pexels-photo-13801831.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      alt="Hero background"
+      class="absolute inset-0 w-full h-full object-cover"
+    />
+    <div class="absolute inset-0 bg-black bg-opacity-30"></div>
+  </div>
+
+  <!-- Sections -->
+  <section id="about" class="py-10 px-6 text-center">
+    <h2 class="text-xl font-semibold text-darkgold mb-6">About Us</h2>
+    <p>Hybrid PLC is a vibrant and diversified conglomerate, strategically positioned to meet the changing demands of modern life. With a portfolio of innovative subsidiaries, we excel across multiple industries, prioritizing quality and customer satisfaction. By cultivating these interconnected ventures, Hybrid PLC adopts a holistic approach to expansion, catering to diverse consumer and industrial needs while fostering innovation and excellence.</p>
+  </section>
+
+  <section id="services" class="py-10 px-6 text-center">
+    <h2 class="text-xl font-semibold text-darkgold mb-6">Our Services</h2>
+    <div class="max-w-4xl mx-auto space-y-8">
+      <div>
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">Agri-Tech Solutions</h3>
+        <p>We help farmers adopt modern technologies—from sensors to automation tools—designed to improve yield, minimize labor, and boost long-term profitability.</p>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">Irrigation Planning</h3>
+        <p>We design efficient water systems customized for your land. Our sustainable irrigation methods help reduce water waste and improve crop health.</p>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">Precision Farming</h3>
+        <p>We use data analytics, satellite imagery, and GPS-based tools to give farmers better control over planting, fertilizing, and harvesting operations.</p>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">Soil Testing</h3>
+        <p>Our expert soil analysis services give you accurate insights into soil health and nutrient levels so you can grow more with less input waste.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="mission" class="py-10 px-6 text-center">
+    <h2 class="text-xl font-semibold text-darkgold mb-6">Our Mission</h2>
+    <p>Hybrid PLC's mission is to strategically cultivate and empower a diverse portfolio of high-quality subsidiaries, driving innovation and delivering exceptional value across essential sectors. We are committed to anticipating and meeting the evolving needs of our customers and stakeholders through sustainable practices, operational excellence, and a dedication to craftsmanship. – Umar Farouq</p>
+  </section>
+
+  <section id="contact" class="py-10 px-6 text-center">
+    <h2 class="text-xl font-semibold text-darkgold mb-6">Contact</h2>
+    <form class="max-w-md mx-auto space-y-4">
+      <input type="text" placeholder="Name" class="w-full border p-3" required>
+      <input type="email" placeholder="Email" class="w-full border p-3" required>
+      <textarea placeholder="Message" class="w-full border p-3" required></textarea>
+      <button type="submit" class="bg-black text-white px-6 py-4 uppercase font-semibold hover:opacity-90 w-full md:w-auto">
+        Send
+      </button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-darkgold uppercase text-sm">
+    <div class="px-6 py-10">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <div>
+          <h3 class="font-semibold mb-6 text-darkgold border-b-2 border-gray-700 pb-3">HYBRID PLC</h3>
+          <ul class="space-y-4 text-white">
+            <li><a href="#" class="hover:text-white">About</a></li>
+            <li><a href="#" class="hover:text-white">Our Story</a></li>
+            <li><a href="#" class="hover:text-white">Our Mission</a></li>
+            <li><a href="#" class="hover:text-white">Vision</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold mb-6 text-darkgold border-b-2 border-gray-700 pb-3">Services</h3>
+          <ul class="space-y-4 text-white text-sm leading-relaxed">
+            <li>Agri-Tech Solutions</li>
+            <li>Irrigation Planning</li>
+            <li>Precision Farming</li>
+            <li>Soil Testing</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold mb-6 text-darkgold border-b-2 border-gray-700 pb-3">Contact</h3>
+          <ul class="space-y-4 text-white">
+            <li><a href="mailto:info@hybridplc.com" class="hover:text-white">info@hybridplc.com</a></li>
+            <li><a href="#" class="hover:text-white">+234 812 452 7890</a></li>
+            <li><a href="#" class="hover:text-white">Kaduna, Nigeria</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-700 mx-6 mt-8"></div>
+      <div class="text-center py-6 space-y-3">
+        <div class="flex justify-center space-x-6 text-xl">
+          <a href="#" class="hover:text-white"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="hover:text-white"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="hover:text-white"><i class="fab fa-x-twitter"></i></a>
+        </div>
+        <p class="text-gray-400 text-xs">&copy; 2025 Hybrid PLC. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
