@@ -28,19 +28,44 @@
 
   <!-- Header -->
   <header class="flex justify-between items-center p-4 border-b border-gray-300">
-    <h1 class="text-2xl font-bold text-darkgold">HYBRID PLC</h1>
+    <div class="flex items-center">
+
+    <div class="relative w-12 h-12">
+    
+          <img
+            src="https://scontent.fabv3-2.fna.fbcdn.net/v/t1.15752-9/494887510_1394458831593449_7843811111102500150_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=0024fc&_nc_ohc=56xOA7pdeqIQ7kNvwH9ox3f&_nc_oc=AdnkyMPH-Y5NT07MGqk61HQSH1cJMXUf4RcYT0dKa7B3DFfL6oQMgcfoxtZyTvJ7sks&_nc_ad=z-m&_nc_cid=1361&_nc_zt=23&_nc_ht=scontent.fabv3-2.fna&oh=03_Q7cD2QGWx_NnJIt4JA-YwcXd3WiAbtkaUryqnDhUT0vBxNPjGA&oe=68579666"
+            alt="Hero background"
+            class="absolute inset-0 w-full h-full object-cover"
+          />
+          
+          <div class="absolute inset-0 bg-black bg-opacity-30"></div>
+        </div>"
+        <h1 class="text-2xl font-bold text-darkgold ml-2">HYBRID PLC</h1>
+      </div>
+
+    
+    </div>
     <button class="md:hidden text-2xl" onclick="document.getElementById('nav').classList.toggle('hidden')">
       &#9776;
     </button>
-    <nav id="nav" class="hidden md:flex space-x-6 text-sm font-semibold uppercase">
+    <nav  class="hidden md:flex space-x-6 text-sm font-semibold uppercase">
       <a href="#about" class="hover:text-darkgold">About</a>
       <a href="#services" class="hover:text-darkgold">Services</a>
       <a href="#mission" class="hover:text-darkgold">Mission</a>
       <a href="#contact" class="hover:text-darkgold">Contact</a>
     </nav>
-  </header>
 
+    
+  </header>
+  <!-- Full width mobile menu below main nav -->
+  <nav id="nav" class="hidden flex-col space-y-3 bg-white uppercase font-semibold text-sm border-t border-gray-200 px-4 py-4 transition-all duration-300 ease-in-out">
+    <a href="#about" class="block hover:text-darkgold">About</a>
+    <a href="#services" class="block hover:text-darkgold">Services</a>
+    <a href="#mission" class="block hover:text-darkgold">Mission</a>
+    <a href="#contact" class="block hover:text-darkgold">Contact</a>
+  </nav>
   <!-- Hero -->
+   
   <div class="relative w-full h-96">
     <img
       src="https://images.pexels.com/photos/13801831/pexels-photo-13801831.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
@@ -53,34 +78,40 @@
   <!-- Sections -->
   <section id="about" class="py-10 px-6 text-center">
     <h2 class="text-xl font-semibold text-darkgold mb-6">About Us</h2>
-    <p>Hybrid PLC is a vibrant and diversified conglomerate, strategically positioned to meet the changing demands of modern life. With a portfolio of innovative subsidiaries, we excel across multiple industries, prioritizing quality and customer satisfaction. By cultivating these interconnected ventures, Hybrid PLC adopts a holistic approach to expansion, catering to diverse consumer and industrial needs while fostering innovation and excellence.</p>
+    <p>Hybrid PLC is a dynamic and diversified company specializing in many key sectors: automotive sales and real estate services. With a strong commitment to quality and customer satisfaction, we offer a seamless experience in acquiring reliable vehicles and securing valuable property investments.</p>
+    <p>In our car sales division, we provide a wide selection of thoroughly vetted vehicles, ensuring clients receive dependable options at competitive prices. Meanwhile, our estate agency delivers tailored property solutions, guiding clients through buying, selling, and letting processes with professionalism and integrity.</p>
+    <p>At Hybrid PLC, we combine industry expertise with a customer-focused approach to deliver value, trust, and long-term relationships across both sectors we serve.</p>
   </section>
 
   <section id="services" class="py-10 px-6 text-center">
     <h2 class="text-xl font-semibold text-darkgold mb-6">Our Services</h2>
     <div class="max-w-4xl mx-auto space-y-8">
       <div>
-        <h3 class="text-lg font-semibold text-gray-900 mb-2">Agri-Tech Solutions</h3>
-        <p>We help farmers adopt modern technologies—from sensors to automation tools—designed to improve yield, minimize labor, and boost long-term profitability.</p>
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">Hybrid Estate Agency</h3>
+        <p>At Hybrid Estate Agency, we are dedicated to providing exceptional real estate services tailored to meet the unique needs of our clients. With a deep understanding of the local market and a commitment to integrity, we strive to make every property transaction seamless and rewarding. Our experienced team is passionate about helping you find your dream home or maximize the value of your investment. Trust us to guide you through every step of the process with professionalism and care.</p>
       </div>
       <div>
-        <h3 class="text-lg font-semibold text-gray-900 mb-2">Irrigation Planning</h3>
-        <p>We design efficient water systems customized for your land. Our sustainable irrigation methods help reduce water waste and improve crop health.</p>
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">Hybrid Motors</h3>
+        <p>Hybrid Motors is committed to providing a superior car-buying experience. We offer a diverse selection of quality vehicles and personalized service to meet your needs. Our team is dedicated to transparency, integrity, and customer satisfaction, ensuring a smooth and rewarding process from start to finish. Drive your dreams with us</p>
       </div>
       <div>
-        <h3 class="text-lg font-semibold text-gray-900 mb-2">Precision Farming</h3>
-        <p>We use data analytics, satellite imagery, and GPS-based tools to give farmers better control over planting, fertilizing, and harvesting operations.</p>
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">HYBRID Aluminum</h3>
+        <p>At HYBRID Aluminum, we specialize in high-quality aluminum fabrication and processing, offering a comprehensive range of services for industries such as construction, automotive, aerospace, and manufacturing. With years of expertise in aluminum extrusion, casting, welding, machining, and finishing, we deliver precision-engineered solutions tailored to meet the unique needs of each project. Our commitment to excellence and innovation ensures that every product is crafted with the highest standards of quality, durability, and efficiency. Whether it’s a custom aluminum profile, complex component, or a large-scale production run, we leverage advanced technology and skilled craftsmanship to exceed expectations. As an environmentally-conscious business, we also emphasize sustainable practices, including the recycling and reusing of aluminum materials, helping to reduce waste and promote a greener future. At Hybrid aluminum sector, we’re dedicated to providing reliable solutions</p>
       </div>
-      <div>
-        <h3 class="text-lg font-semibold text-gray-900 mb-2">Soil Testing</h3>
-        <p>Our expert soil analysis services give you accurate insights into soil health and nutrient levels so you can grow more with less input waste.</p>
-      </div>
+    
     </div>
   </section>
 
   <section id="mission" class="py-10 px-6 text-center">
     <h2 class="text-xl font-semibold text-darkgold mb-6">Our Mission</h2>
-    <p>Hybrid PLC's mission is to strategically cultivate and empower a diverse portfolio of high-quality subsidiaries, driving innovation and delivering exceptional value across essential sectors. We are committed to anticipating and meeting the evolving needs of our customers and stakeholders through sustainable practices, operational excellence, and a dedication to craftsmanship. – Umar Farouq</p>
+    <p>Hybrid PLC's mission is to strategically cultivate and empower a diverse portfolio of high-quality subsidiaries, driving innovation and delivering exceptional value across essential sectors. We are committed to anticipating and meeting the evolving needs of our customers and stakeholders through sustainable practices, operational excellence, and a dedication to craftsmanship. <br><br> – Umar Farouq</p>
+  </section>
+
+  <section id="mission" class="py-10 px-6 text-center">
+    <h2 class="text-xl font-semibold text-darkgold mb-6">Vision Statement</h2>
+    <p>
+
+      To be the leading diversified company, recognized for excellence in real estate, automotive sales, and aluminum mechanics, by consistently exceeding customer expectations through innovation, integrity, and a commitment to quality. We envision a future where our diverse expertise creates lasting value and strengthens the communities we serve. <br><br> – Umar Farouq</p>
   </section>
 
   <section id="contact" class="py-10 px-6 text-center">
